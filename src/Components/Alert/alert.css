@@ -1,0 +1,16 @@
+.error {
+    position: absolute;
+    z-index: 1000000;
+    width: 50%;
+    left: 25%;
+    height: 0%;
+    overflow: hidden;
+    -moz-transition-duration: 500ms;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.flash {
+    height: unset;
+    transform: translateY(25%);
+}

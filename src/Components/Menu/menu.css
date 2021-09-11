@@ -1,0 +1,75 @@
+.wrapper {
+    position: absolute;
+    z-index: 100000;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 0%;
+    right: 0;
+    border-left: 1px solid #dbdbdb;;
+    transition: width .5s ease;
+}
+
+.responsive {
+    width: 20%;
+}
+
+@media only screen and (max-width: 2560px) {
+    .responsive {
+        width: 25%;
+    }
+}
+
+@media only screen and (max-width: 1920px) {
+    .responsive {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .responsive {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    .responsive {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .responsive {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.menubtn {
+    float: right;
+    margin: .5em .5em 0 0;
+}
+
+.menu {
+    background-color: white;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+}
+
+.level {
+    border-bottom: 1px solid #dbdbdb;
+    padding: 2em 0 2em 0;
+}
+
+.level button {
+    border: none;
+}
+

@@ -1,0 +1,44 @@
+
+
+.dropdown-wrapper {
+    text-align: center;
+    position: absolute;
+    z-index: 1000000;
+    left: 25%;
+    right: 25%;
+    top: .5em;
+    height: 0%;
+    overflow: hidden;
+}
+
+.dropdown-wrapper-visible {
+    text-align: center;
+    position: absolute;
+    z-index: 1000000;
+    left: 25%;
+    right: 25%;
+    top: .5em;
+}
+
+.dropdown-content {
+    width: 0%;
+    overflow: hidden;
+    -moz-transition-duration: 1000ms;
+    -webkit-transition-duration: 1000ms;
+    transition-duration: 1000ms;
+}
+
+.extend {
+    width: unset;
+    transform: translateY(10%);
+}
+
+.rotate-down {
+    transform: rotate(0deg);
+    transition: transform .20s linear;
+}
+
+.rotate-up {
+    transform: rotate(-180deg);
+    transition: transform .20s linear;
+}

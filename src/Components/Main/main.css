@@ -1,0 +1,9 @@
+
+.button.is-link.is-inverted:focus {
+    border-bottom: 1px solid #3273DC;
+    border-radius: unset;
+  }
+  
+.button.is-link.is-inverted:focus {
+  box-shadow: none;
+}

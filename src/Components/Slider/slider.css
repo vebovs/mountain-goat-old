@@ -1,0 +1,80 @@
+.slider-wrapper {
+    position: absolute;
+    z-index: 10000;
+    padding: 0;
+    width: 0%;
+    height: 80%;
+    bottom: 0;
+    right: 0;
+    -moz-transition-duration: 1000ms;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.visible {
+    width: 40px;
+    transform: translate(-40%);
+}
+
+.slider-box input[type=range][orient=vertical] {
+    writing-mode: bt-lr; /* IE */
+    -webkit-appearance: slider-vertical; /* WebKit */
+    width: 40px;
+    height: 80%;
+}
+
+@media only screen and (max-height: 1480px) {
+    .slider-box input[type=range][orient=vertical] {
+        height: 80%;
+    }
+}
+
+@media only screen and (max-height: 760px) {
+    .slider-box input[type=range][orient=vertical] {
+        height: 60%;
+    }
+}
+
+@media only screen and (max-height: 520px) {
+    .slider-box input[type=range][orient=vertical] {
+        height: 50%;
+    }
+}
+
+@media only screen and (max-height: 480px) {
+    .slider-box input[type=range][orient=vertical] {
+        height: 35%;
+    }
+}
+
+@media only screen and (max-height: 400px) {
+    .slider-box input[type=range][orient=vertical] {
+        height: 20%;
+    }
+}
+
+.slider-box {
+    position: absolute;
+    bottom: 2em;
+    width: 100%;
+    height: 100%;
+}
+
+.slider-input, .enter, .remove {
+    position: absolute;
+    bottom: 0;
+}
+
+.slider-input {
+    margin-bottom: 8em;
+}
+
+.slider-input:hover {
+    cursor: pointer;
+}
+
+.enter {
+    background-color: #3273DC;
+    color: white;
+    margin-bottom: 3em;
+}
